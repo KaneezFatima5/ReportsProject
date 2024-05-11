@@ -8,8 +8,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@DiscriminatorValue(value = Students.STUDENT)
 @Entity
-@DiscriminatorValue()
 public class Students extends Individuals {
-    
+    public static final String STUDENT="S";
 }
