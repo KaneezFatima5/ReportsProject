@@ -22,10 +22,9 @@ public class IndividualsService {
         individual.setTypeOfInd(individualDto.getTypeOfInd());
         try{
             individualsRepo.save(individual);
+            return true;
         }catch (Exception ex){
             throw new RuntimeException("Can not create individual");
         }
-
-
     }
 }
