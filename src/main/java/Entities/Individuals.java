@@ -17,7 +17,7 @@ public class Individuals {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotEmpty
-    private int name;
+    private String name;
     private int cnic;
     private int age;
     @Embedded

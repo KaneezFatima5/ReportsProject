@@ -13,7 +13,7 @@ import javax.validation.constraints.NotEmpty;
 public class IndividualDto {
     private int id;
     @NotEmpty
-    private int name;
+    private String name;
     private int cnic;
     private int age;
     private String TypeOfInd;

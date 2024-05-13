@@ -42,7 +42,10 @@ public class IndividualsService {
         List<IndividualDto> individualDtos=individuals.stream().map(x -> this.modelMapper.map(x, IndividualDto.class)).collect(Collectors.toList());
         return individualDtos;
     }
-    public void deleteIndividual(int id){
-        
+    public String deleteIndividual(int id){
+        Individuals individuals=individualsRepo.findById(id).orElseThrow(()-> new RuntimeException("not found"));
+        String name=individuals.getName();
+        individualsRepo.delete(individuals);
+        return name;
     }
 }
