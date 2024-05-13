@@ -27,5 +27,8 @@ public class Individuals {
         List<IndividualDto> individuals=individualsService.getAll();
         return ResponseEntity.ok(individuals);
     }
-    
+    public ResponseEntity<?> deleteIndividual(int id){
+        String name= individualsService.deleteIndividual(id);
+        return ResponseEntity.ok(name);
+    }
 }
