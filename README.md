@@ -7,4 +7,4 @@ This java application is the backend for a college management system. It include
 * Repots generation for exam results, admission list, academic records etc.
 
 ## REPORTING MODULE
-For reports generation in different file formats, 
+For reports generation in different file formats, we have used freemarker templates and jxls for excels. In Order to convert HTML to pdf, java library 'openHTMLtopdf' has been utilized. For converting jxls to pdf gotenberg API has been used.
